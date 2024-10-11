@@ -331,13 +331,12 @@ contract Addresses is IAddresses, Test {
                 getRecordedAddresses();
 
             if (names.length > 0) {
-                console.log("\n\n--------- Addresses added ---------");
+                console.log("\n\n------------------ Addresses Added ------------------");
                 for (uint256 j = 0; j < names.length; j++) {
-                    console.log("{\n          'addr': '%s', ", addresses[j]);
-                    console.log("        'chainId': %d,", block.chainid);
-                    console.log("        'isContract': %s", true, ",");
+                    console.log("{\n          \"addr\": \"%s\", ", addresses[j]);
+                    console.log("        \"isContract\": %s,", true);
                     console.log(
-                        "        'name': '%s'\n}%s",
+                        "        \"name\": \"%s\"\n}%s",
                         names[j],
                         j < names.length - 1 ? "," : ""
                     );
@@ -350,7 +349,7 @@ contract Addresses is IAddresses, Test {
                 getChangedAddresses();
 
             if (names.length > 0) {
-                console.log("\n\n-------- Addresses changed  --------");
+                console.log("\n\n----------------- Addresses changed  -----------------");
 
                 for (uint256 j = 0; j < names.length; j++) {
                     console.log("{\n          'addr': '%s', ", addresses[j]);
