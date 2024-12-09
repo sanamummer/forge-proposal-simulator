@@ -9,12 +9,12 @@ optimizer_runs = 200
 
 [rpc_endpoints]
 localhost = "http://127.0.0.1:8545"
-sepolia = "https://sepolia.drpc.org"
-mainnet = "https://mainnet.gateway.tenderly.co" 
+sepolia = "https://rpc.buildbear.io/sanam"
+mainnet = "https://virtual.mainnet.rpc.tenderly.co/0391d9fa-0553-482f-9dac-6eb34f75001c" 
 
 [fmt]
 line_length = 80
 
 #[etherscan]
-#sepolia = { key = "${ETHERSCAN_API_KEY}" }
+#sepolia = { key = "verifyContract" }
 
